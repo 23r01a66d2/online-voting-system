@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+h2 {
+  color: #d291bc;
+}
+a {
+  color: #9d4edd;
+  text-decoration: none;
+}
+.form-container, .vote-container, .results-container {
+  background-color: #fff0f6;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+input, button {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+button {
+  background-color: #ffcad4;
+  border: none;
+  font-weight: bold;
+}
+.message {
+  color: green;
+  font-weight: bold;
+}
+.option-card, .result-card {
+  margin-bottom: 15px;
+  background-color: #f3c4fb;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.option-card img, .result-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}

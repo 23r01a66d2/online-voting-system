@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="results-container">
+    <h2><%= poll.question %> - Results</h2>
+    <% results.forEach(result => { %>
+      <div class="result-card">
+        <img src="/images/<%= result.logo %>" alt="<%= result.option_text %>">
+        <p><%= result.option_text %>: <strong><%= result.vote_count %> votes</strong></p>
+      </div>
+    <% }); %>
+  </div>
+</body>
+</html>

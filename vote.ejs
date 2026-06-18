@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="vote-container">
+    <h2><%= poll.question %></h2>
+    <form method="POST" action="/vote">
+      <% options.forEach(option => { %>
+        <div class="option-card">
+          <img src="/images/<%= option.logo %>" alt="<%= option.option_text %>">
+          <label>
+            <input type="radio" name="option" value="<%= option.id %>" required>
+            <%= option.option_text %>
+          </label>
+        </div>
+      <% }); %>
+      <button type="submit">Submit Vote</button>
+    </form>
+  </div>
+</body>
+</html>
